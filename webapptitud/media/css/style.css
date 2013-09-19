@@ -2,23 +2,35 @@
 	margin:0;
 }
 body{
-	background: lightgray;
+	background:#f4f4f4 url(/media/images/fondo-apptitud.png) no-repeat;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	height: 550px;
+	background-size: 100% 100%;
 	color: white;
-	font-family: Arial;
+	font-family: Helvetica;
 	font-size: 16px;
 	text-shadow:1px 1px 0 rgba(0,0,0,0.8);
 }
 nav{
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 210px;
+	max-width: 800px;
 	height: 80px;
-	background: 
 }
 nav ul{
-	height: 80px;
-	background:rgba(0,0,0,.5);/*negro transparente*/
+	height: 100%;
+	background:rgba(0,0,0,0.8);/*negro transparente*/
 	font-size:0;
 	padding:0;
 	-webkit-border-bottom-right-radius: 20px;
 	border-bottom-right-radius: 20px;
+	-webkit-border-top-left-radius: 20px;
+	border-top-left-radius: 40px;
+	position: relative;
+	box-shadow: 0 0 8px 8px #888;
 }
 nav ul li{
 	box-sizing:border-box;
@@ -28,8 +40,7 @@ nav ul li{
 	height:80px;
 	text-align:center;
 	vertical-align: top;
-	width:14%;
-	border:solid gray 1px;
+	width:16.66%;
 
 }
 nav ul li:hover{
@@ -40,20 +51,30 @@ nav ul li a{
 	text-transform:uppercase;
 	text-decoration: none
 }
-nav ul li img{
+nav img{
 	height:auto;
-	width:80%;
+	opacity:0.9;
+	position: absolute;
+	top: 46px;
+	left: 1018px;
+
 }
 #contenedor{
-	background:gray;
 	margin:0 auto;
 	max-width:100%;
+	padding: 10px;
+	height: 385px;
+}
+#contenedor #webs{
+	margin-left: 210px;
 }
 #webs{
-	background:gray;
-	padding:20px;
+	background:rgba(0,0,0,0.5);
 	text-align:center;
-	padding: 250px;
+	max-width: 900px;
+	height: 385px;
+	border: white 1px solid;
+	padding: 10px;
 }
 #webs article{
 	background:#ccc;
@@ -81,8 +102,10 @@ nav ul li img{
 }
 
 footer{
-	width: 100%;
-	text-align: center;
+
+	max-width: 50%;
+	background: rgba(0,0,0,0.8);
+	padding-left: 500px;
 }
 
 /* para que no se junten los elementos, en este caso el header */
@@ -96,11 +119,19 @@ footer{
 		text-align:center;
 		width:auto;
 	}
+	footer{
+		display:block;
+		text-align:center;
+		width:auto;
+	}
 	.avatar,.personal{
 		float:none;
 	}
 	.avatar{
 		display:inline-block;
 		margin:10px 0;
+	}
+	nav ul{
+		height: 100%;
 	}
 }
